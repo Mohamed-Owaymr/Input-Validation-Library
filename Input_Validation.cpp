@@ -196,3 +196,7 @@ bool Input_Validation::isCinBufferEmpty()
 {
     return cin.rdbuf()->in_avail() == 0;
 }
+bool isDateBettwen(const Date& subDate , const Date& startDate , const Date& endDate , bool inclusive = true)
+{
+    return Date::isDateInRange(subDate , startDate , endDate , inclusive);
+}

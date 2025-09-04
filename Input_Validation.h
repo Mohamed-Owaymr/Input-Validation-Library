@@ -3,6 +3,7 @@
 #include <cctype>
 #include <string>
 #include "magic_enum.hpp"
+#include "date.cpp"
 using namespace std;
 
 class Input_Validation
@@ -46,4 +47,6 @@ public:
     static float readNumber(const string& msg , enNumberTypes inputType);
 
     static string readString(const string& msg , short minLength = 0 , short maxLength = 1000 , bool inclusive = true);
+
+    static bool isDateBettwen(const Date& subDate , const Date& startDate , const Date& endDate , bool inclusive = true);
 };
