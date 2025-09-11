@@ -11,10 +11,6 @@ class Input_Validation
 private:
     static void printInvalidValueErrorMessage();
     static void displayUserOptionsList(const string& options);
-
-    template <typename EnumType>
-    static size_t getEnumSizeUsingMagicEnumCount();
-
     static bool isCinBufferEmpty();
 
 public:
